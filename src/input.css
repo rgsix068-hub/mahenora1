@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Custom styles (dipindahkan dari <style> inline) ===== */
+:root{ --teal:#0FA3A0; }
+body{ background:#FBFDFE; color:#0C2034; -webkit-font-smoothing:antialiased; }
+
+.grid-soft{
+  background-image:
+    linear-gradient(rgba(16,55,84,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16,55,84,.04) 1px, transparent 1px);
+  background-size:56px 56px;
+  -webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 35%, #000 30%, transparent 100%);
+  mask-image:radial-gradient(ellipse 80% 60% at 50% 35%, #000 30%, transparent 100%);
+}
+.glow{ background:radial-gradient(closest-side, rgba(15,163,160,.20), transparent 70%); filter:blur(50px); }
+
+.reveal{ opacity:0; transform:translateY(28px); transition:opacity 1s cubic-bezier(.16,.8,.2,1), transform 1s cubic-bezier(.16,.8,.2,1); }
+.reveal.in{ opacity:1; transform:none; }
+
+@keyframes riseIn{ from{opacity:0; transform:translateY(34px)} to{opacity:1; transform:none} }
+.rise{ opacity:0; animation:riseIn 1s cubic-bezier(.16,.8,.2,1) forwards; }
+
+@keyframes floaty{ 0%,100%{transform:translateY(0)} 50%{transform:translateY(-9px)} }
+.floaty{ animation:floaty 6s ease-in-out infinite; }
+
+.card-lift{ transition:transform .5s cubic-bezier(.16,.8,.2,1), box-shadow .5s, border-color .5s; }
+.card-lift:hover{ transform:translateY(-9px); box-shadow:0 30px 60px -30px rgba(16,55,84,.35); }
+
+.eyebrow{ letter-spacing:.22em; }
+.navlink{ position:relative; }
+.navlink::after{ content:""; position:absolute; left:0; bottom:-5px; height:2px; width:0; background:var(--teal); transition:width .35s ease; }
+.navlink:hover::after{ width:100%; }
+
+::selection{ background:#0FA3A0; color:#fff; }
+
+@keyframes scrollx{ from{transform:translateX(0)} to{transform:translateX(-50%)} }
+.marquee{ animation:scrollx 34s linear infinite; }
+
+@keyframes pulseRing{ 0%{transform:scale(.8);opacity:.7} 100%{transform:scale(2.4);opacity:0} }
+.ring::after{ content:""; position:absolute; inset:0; border-radius:9999px; border:2px solid var(--teal); animation:pulseRing 2.4s ease-out infinite; }
+
+.tag{ font-size:11px; letter-spacing:.1em; }
+
+/* Tombol filter katalog */
+.filter-btn, .seg-btn{ background:#fff; color:#0C2034; }
+.filter-btn:hover, .seg-btn:hover{ border-color:#0FA3A0; color:#0B807E; }
+.filter-btn.is-active, .seg-btn.is-active{ background:#0C2034; color:#fff; border-color:#0C2034; }
+.img-cover{ object-fit:cover; width:100%; height:100%; }
+.card-img{ transition:transform .7s cubic-bezier(.16,.8,.2,1); }
+.group:hover .card-img{ transform:scale(1.06); }
+
+/* Hormati preferensi pengguna yang mematikan animasi */
+@media (prefers-reduced-motion: reduce){
+  .reveal,.rise,.floaty,.marquee,.card-img,.ring::after{ animation:none !important; transition:none !important; }
+  .reveal{ opacity:1; transform:none; }
+}
