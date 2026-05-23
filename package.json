@@ -1,0 +1,13 @@
+{
+  "name": "mahenora-web",
+  "version": "1.0.0",
+  "description": "Website MAHENORA — Smart Institution (IoT & Private Cloud). Static, siap deploy.",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -c tailwind.config.js -i ./src/input.css -o ./dist/assets/styles.css --minify",
+    "watch": "tailwindcss -c tailwind.config.js -i ./src/input.css -o ./dist/assets/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
