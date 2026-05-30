@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAHENORA — Smart Institution Berbasis IoT &amp; Private Cloud</title>
+  <meta name="description" content="System Integrator & Private Cloud Provider. Hardware IoT + aplikasi efisiensi staf. Bayar sekali, data milik Anda, tanpa langganan vendor. SLA lokal 4 jam.">
+  <meta name="theme-color" content="#0C2034">
+
+  <!-- Open Graph / sosial media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MAHENORA — Smart Institution Berbasis IoT & Private Cloud">
+  <meta property="og:description" content="Ubah instansi Anda menjadi Smart Institution. Bayar sekali, data milik Anda, tanpa langganan vendor. Demo gratis 14 hari.">
+  <meta property="og:locale" content="id_ID">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS Tailwind hasil compile (TANPA CDN, siap produksi) -->
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body class="font-sans antialiased overflow-x-hidden">
+
+  <!-- ===================== NAV ===================== -->
+  <header class="fixed top-0 inset-x-0 z-50 transition-all duration-500" id="nav">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="flex items-center justify-between h-[76px]" id="navinner">
+        <a href="#hero" class="flex items-center gap-2.5 group" aria-label="MAHENORA beranda">
+          <span class="grid place-items-center w-9 h-9 rounded-xl bg-teal text-white font-display font-semibold text-lg shadow-lg shadow-teal/25 group-hover:rotate-[10deg] transition-transform">M</span>
+          <span class="font-display text-[1.35rem] tracking-tightish text-ink transition-colors" id="brand">MAHENORA</span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-9 text-[13.5px] font-medium text-ink/70" id="navlinks" aria-label="Navigasi utama">
+          <a href="#tentang" class="navlink">Tentang</a>
+          <a href="#solusi" class="navlink">Solusi Unggulan</a>
+          <a href="#portofolio" class="navlink">Portofolio</a>
+          <a href="#proses" class="navlink">Cara Kerja</a>
+          <a href="katalog.html" class="navlink">Katalog</a>
+        </nav>
+        <a href="#kontak" class="hidden sm:inline-flex items-center gap-2 rounded-full bg-ink text-white font-semibold text-sm px-5 py-2.5 hover:bg-deep transition-colors shadow-lg shadow-ink/15">
+          Demo Gratis 14 Hari
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-paper overflow-hidden">
+    <div class="absolute inset-0 grid-soft"></div>
+    <div class="absolute -top-20 right-0 w-[34rem] h-[34rem] glow opacity-80"></div>
+    <div class="absolute top-1/2 -left-32 w-[26rem] h-[26rem] glow opacity-50"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        <!-- Copy -->
+        <div class="lg:col-span-6">
+          <div class="rise inline-flex items-center gap-2.5 rounded-full border border-teal/25 bg-teal/8 pl-2 pr-4 py-1.5 mb-7" style="animation-delay:.05s">
+            <span class="relative grid place-items-center"><span class="w-2 h-2 rounded-full bg-teal"></span><span class="absolute ring w-2 h-2"></span></span>
+            <span class="text-tealdk text-xs font-semibold tracking-wide">System Integrator &amp; Private Cloud Provider</span>
+          </div>
+
+          <h1 class="rise font-display text-ink text-[2.6rem] sm:text-6xl lg:text-[4.1rem] leading-[1.04] tracking-tightish" style="animation-delay:.15s">
+            Ubah Instansi Anda Menjadi
+            <span class="text-tealdk italic">Smart Institution</span>
+            dalam Hitungan Pekan.
+          </h1>
+
+          <p class="rise mt-7 text-ink/65 text-lg leading-relaxed max-w-xl" style="animation-delay:.3s">
+            Kami merakit <span class="text-ink font-semibold">perangkat IoT</span> dan membangun <span class="text-ink font-semibold">aplikasi pendukungnya</span> menjadi satu paket terintegrasi — memangkas beban kerja staf, menekan biaya operasional, dan menempatkan kendali penuh atas data di server Anda sendiri.
+          </p>
+
+          <div class="rise mt-9 flex flex-col sm:flex-row gap-3.5" style="animation-delay:.45s">
+            <a href="#kontak" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-teal text-white font-bold px-7 py-4 hover:bg-tealdk transition-all shadow-xl shadow-teal/25">
+              Ajukan Pilot Project Gratis 14 Hari
+              <svg class="group-hover:translate-x-1 transition-transform" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#mengapa" class="inline-flex items-center justify-center gap-2 rounded-full border border-ink/15 text-ink font-semibold px-7 py-4 hover:border-teal hover:bg-sky transition-colors">
+              Lihat Cara Kerjanya
+            </a>
+          </div>
+
+          <!-- Stat strip -->
+          <div class="rise mt-12 grid grid-cols-3 gap-4 sm:gap-6 max-w-lg" style="animation-delay:.6s">
+            <div>
+              <p class="font-display text-3xl sm:text-4xl text-ink">14<span class="text-teal text-xl"> hari</span></p>
+              <p class="text-ink/50 text-[12.5px] mt-1 leading-tight">Uji coba gratis tanpa risiko</p>
+            </div>
+            <div class="border-x border-line px-4 sm:px-6">
+              <p class="font-display text-3xl sm:text-4xl text-ink">4<span class="text-teal text-xl"> jam</span></p>
+              <p class="text-ink/50 text-[12.5px] mt-1 leading-tight">Komitmen respon SLA lokal</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl sm:text-4xl text-ink">0</p>
+              <p class="text-ink/50 text-[12.5px] mt-1 leading-tight">Langganan bulanan mengikat</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual: photo + floating stat cards -->
+        <div class="lg:col-span-6 rise" style="animation-delay:.5s">
+          <div class="relative">
+            <div class="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-teal/20 via-transparent to-transparent blur-2xl"></div>
+
+            <div class="relative rounded-[1.8rem] overflow-hidden shadow-photo border border-line">
+              <img src="assets/img/hero-office.jpg" alt="Tim profesional bekerja di kantor modern" class="img-cover h-[440px] sm:h-[500px]" width="1100" height="500" loading="eager">
+              <div class="absolute inset-0 bg-gradient-to-t from-ink/55 via-ink/5 to-transparent"></div>
+            </div>
+
+            <!-- Floating card: kemampuan (bukan klaim hasil) -->
+            <div class="absolute -top-5 -right-3 sm:-right-6 rounded-2xl bg-white shadow-soft border border-line p-4 w-[200px] floaty">
+              <div class="flex items-center justify-between mb-2.5">
+                <span class="tag uppercase text-ink/45">Solusi Terintegrasi</span>
+                <span class="text-teal text-xs font-bold">●</span>
+              </div>
+              <div class="space-y-2">
+                <div class="flex items-center gap-2 text-[12.5px] text-ink/70"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span>Perangkat IoT</div>
+                <div class="flex items-center gap-2 text-[12.5px] text-ink/70"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span>Aplikasi staf</div>
+                <div class="flex items-center gap-2 text-[12.5px] text-ink/70"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span>Server lokal Anda</div>
+              </div>
+            </div>
+
+            <!-- Floating card: status server (netral, menegaskan USP self-hosted) -->
+            <div class="absolute -bottom-6 -left-3 sm:-left-7 rounded-2xl bg-white shadow-soft border border-line p-3.5 flex items-center gap-3 w-[250px] floaty" style="animation-delay:1.6s">
+              <span class="grid place-items-center w-10 h-10 rounded-xl bg-teal/12 text-tealdk shrink-0">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7l9-4 9 4v10l-9 4-9-4V7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 11l9-4M12 11v10M12 11L3 7" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <div class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-teal"></span>
+                  <p class="text-ink text-[12.5px] font-semibold leading-tight">Private Cloud aktif</p>
+                </div>
+                <p class="text-ink/50 text-[11px] leading-tight mt-0.5">Berjalan di server lokal Anda</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trust marquee -->
+    <div class="relative z-10 mt-16 lg:mt-24 border-y border-line bg-white/60 backdrop-blur-sm">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center gap-6 overflow-hidden">
+        <span class="shrink-0 text-ink/40 text-[11px] eyebrow uppercase">Bidang Solusi</span>
+        <div class="flex gap-9 marquee whitespace-nowrap text-ink/45 text-sm font-semibold">
+          <span>Keamanan &amp; AI CCTV</span><span class="text-teal/50">•</span><span>Smart Building &amp; Energi</span><span class="text-teal/50">•</span><span>Fleet &amp; Tracking</span><span class="text-teal/50">•</span><span>Smart Industri</span><span class="text-teal/50">•</span><span>Smart Agriculture</span><span class="text-teal/50">•</span><span>Monitoring Lingkungan</span><span class="text-teal/50">•</span>
+          <span>Keamanan &amp; AI CCTV</span><span class="text-teal/50">•</span><span>Smart Building &amp; Energi</span><span class="text-teal/50">•</span><span>Fleet &amp; Tracking</span><span class="text-teal/50">•</span><span>Smart Industri</span><span class="text-teal/50">•</span><span>Smart Agriculture</span><span class="text-teal/50">•</span><span>Monitoring Lingkungan</span><span class="text-teal/50">•</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PAIN → PROMISE ===================== -->
+  <section class="relative bg-white py-20">
+    <div class="max-w-5xl mx-auto px-6 lg:px-10 text-center">
+      <p class="reveal eyebrow text-tealdk text-xs font-semibold uppercase mb-5">Masalah yang Kami Selesaikan</p>
+      <h2 class="reveal font-display text-3xl sm:text-[2.6rem] text-ink tracking-tightish leading-[1.14]">
+        Pekerjaan manual menguras waktu. Biaya operasional bocor tanpa terlihat. Dan data berharga Anda berada di tangan orang lain.
+      </h2>
+      <p class="reveal mt-6 text-ink/55 text-lg max-w-2xl mx-auto">
+        MAHENORA menutup ketiga celah itu dalam satu solusi terpadu — perangkat cerdas yang bekerja di atas infrastruktur milik Anda sendiri, bukan menyewa milik orang lain.
+      </p>
+
+      <!-- Prinsip Kerja Kami (komitmen, bukan klaim hasil yang belum terbukti) -->
+      <div class="reveal mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="rounded-2xl bg-paper border border-line p-6 text-left">
+          <span class="grid place-items-center w-11 h-11 rounded-xl bg-ink text-teal mb-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l8 4v5c0 4.5-3 7.5-8 9-5-1.5-8-4.5-8-9V7l8-4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+          <p class="font-display text-lg text-ink leading-tight">Data di Server Anda</p>
+          <p class="text-ink/55 text-sm mt-1.5 leading-snug">Diproses &amp; disimpan di infrastruktur milik instansi sendiri.</p>
+        </div>
+        <div class="rounded-2xl bg-paper border border-line p-6 text-left">
+          <span class="grid place-items-center w-11 h-11 rounded-xl bg-ink text-teal mb-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+          <p class="font-display text-lg text-ink leading-tight">Tanpa Langganan</p>
+          <p class="text-ink/55 text-sm mt-1.5 leading-snug">Bayar sekali di awal, bukan biaya bulanan yang mengikat.</p>
+        </div>
+        <div class="rounded-2xl bg-paper border border-line p-6 text-left">
+          <span class="grid place-items-center w-11 h-11 rounded-xl bg-ink text-teal mb-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 7l-1.5-1.5a2 2 0 00-3 0L4 11a2 2 0 000 3l5 5a2 2 0 003 0l5.5-5.5a2 2 0 000-3L17 8" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <p class="font-display text-lg text-ink leading-tight">Dirancang Khusus</p>
+          <p class="text-ink/55 text-sm mt-1.5 leading-snug">Solusi dibangun menyesuaikan kebutuhan nyata staf Anda.</p>
+        </div>
+        <div class="rounded-2xl bg-paper border border-line p-6 text-left">
+          <span class="grid place-items-center w-11 h-11 rounded-xl bg-ink text-teal mb-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12a8 8 0 018-8v8H4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 4a8 8 0 11-8 8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+          <p class="font-display text-lg text-ink leading-tight">Coba Dulu, Gratis</p>
+          <p class="text-ink/55 text-sm mt-1.5 leading-snug">Audit jaringan &amp; pilot 14 hari sebelum ada komitmen biaya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TENTANG MAHENORA ===================== -->
+  <section id="tentang" class="relative py-24 bg-sky overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6">
+          <div class="reveal relative rounded-[1.8rem] overflow-hidden shadow-photo border border-line">
+            <img src="assets/img/gov-fleet.jpg" alt="Perakitan dan integrasi perangkat IoT" class="img-cover h-[360px] sm:h-[420px]" width="900" height="420" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-ink/10 to-transparent"></div>
+            <div class="absolute bottom-5 left-5 right-5 flex flex-wrap gap-2">
+              <span class="tag uppercase text-white bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-3 py-1.5">Arduino</span>
+              <span class="tag uppercase text-white bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-3 py-1.5">Raspberry Pi</span>
+              <span class="tag uppercase text-white bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-3 py-1.5">Aplikasi Custom</span>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-6">
+          <p class="reveal eyebrow text-tealdk text-xs font-semibold uppercase mb-4">Tentang MAHENORA</p>
+          <h2 class="reveal font-display text-4xl sm:text-5xl text-ink tracking-tightish leading-[1.08]">
+            Mitra IoT yang <span class="italic text-tealdk">Merancang</span>, Bukan Sekadar Menjual.
+          </h2>
+          <p class="reveal mt-5 text-ink/65 text-lg leading-relaxed">
+            MAHENORA adalah penyedia solusi <em>Internet of Things</em> yang fokus membangun sistem cerdas sesuai kebutuhan nyata di lapangan. Kami merakit perangkat berbasis <span class="text-ink font-semibold">Arduino &amp; Raspberry Pi</span>, lalu menyatukannya dengan <span class="text-ink font-semibold">aplikasi yang kami kembangkan sendiri</span> untuk meringankan pekerjaan staf Anda.
+          </p>
+          <p class="reveal mt-4 text-ink/60 leading-relaxed">
+            Sebagai mitra teknologi yang baru tumbuh, kami menawarkan sesuatu yang sering hilang dari vendor besar: <span class="text-ink font-medium">fleksibilitas penuh, perhatian personal, dan kejujuran.</span> Kami lebih suka membuktikan lewat uji coba nyata daripada janji di atas kertas.
+          </p>
+          <div class="reveal mt-7 grid sm:grid-cols-3 gap-4">
+            <div class="rounded-xl bg-white border border-line p-4">
+              <p class="font-display text-lg text-ink">Spesialisasi</p>
+              <p class="text-ink/55 text-sm mt-1">Sistem IoT custom</p>
+            </div>
+            <div class="rounded-xl bg-white border border-line p-4">
+              <p class="font-display text-lg text-ink">Pendekatan</p>
+              <p class="text-ink/55 text-sm mt-1">Audit → Pilot → Skala</p>
+            </div>
+            <div class="rounded-xl bg-white border border-line p-4">
+              <p class="font-display text-lg text-ink">Prinsip</p>
+              <p class="text-ink/55 text-sm mt-1">Self-hosted, milik Anda</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== KEAHLIAN TEKNIS ===================== -->
+  <section id="keahlian" class="relative py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="reveal text-center max-w-2xl mx-auto mb-14">
+        <p class="eyebrow text-tealdk text-xs font-semibold uppercase mb-4">Keahlian Teknis</p>
+        <h2 class="font-display text-4xl sm:text-5xl text-ink tracking-tightish leading-[1.08]">Fondasi Teknologi yang Kami Kuasai.</h2>
+        <p class="mt-5 text-ink/55 text-lg">Kombinasi perangkat keras terbuka dan perangkat lunak custom — kami merakitnya menjadi solusi yang utuh.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="reveal rounded-2xl bg-paper border border-line p-7 hover:shadow-card transition-shadow">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl bg-tealdk/10 text-tealdk mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+          <h3 class="font-display text-lg text-ink">Arduino &amp; Mikrokontroler</h3>
+          <p class="mt-2 text-sm text-ink/55 leading-relaxed">Perakitan sensor, RFID, dan otomasi perangkat untuk kebutuhan spesifik di lapangan.</p>
+        </div>
+        <div class="reveal rounded-2xl bg-paper border border-line p-7 hover:shadow-card transition-shadow" style="transition-delay:.06s">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl bg-tealdk/10 text-tealdk mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="6" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 6V4M16 6V4M9 10h6M9 14h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+          <h3 class="font-display text-lg text-ink">Raspberry Pi &amp; Edge</h3>
+          <p class="mt-2 text-sm text-ink/55 leading-relaxed">Komputasi tepi (<em>edge</em>) untuk memproses data IoT langsung di lokasi, hemat &amp; mandiri.</p>
+        </div>
+        <div class="reveal rounded-2xl bg-paper border border-line p-7 hover:shadow-card transition-shadow" style="transition-delay:.12s">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl bg-tealdk/10 text-tealdk mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 3H5a2 2 0 00-2 2v3M16 3h3a2 2 0 012 2v3M8 21H5a2 2 0 01-2-2v-3M16 21h3a2 2 0 002-2v-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/></svg></span>
+          <h3 class="font-display text-lg text-ink">Aplikasi Custom</h3>
+          <p class="mt-2 text-sm text-ink/55 leading-relaxed">Dasbor &amp; aplikasi pendukung kerja staf yang kami bangun menyesuaikan alur kerja Anda.</p>
+        </div>
+        <div class="reveal rounded-2xl bg-paper border border-line p-7 hover:shadow-card transition-shadow" style="transition-delay:.18s">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl bg-tealdk/10 text-tealdk mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="3" y="14" width="18" height="6" rx="1.5" stroke="currentColor" stroke-width="1.7"/><path d="M7 7h.01M7 17h.01" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+          <h3 class="font-display text-lg text-ink">Server &amp; Integrasi</h3>
+          <p class="mt-2 text-sm text-ink/55 leading-relaxed">Penyatuan perangkat &amp; aplikasi ke dalam satu server lokal (Private Cloud) milik Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PORTOFOLIO / BUKTI KEMAMPUAN ===================== -->
+  <section id="portofolio" class="relative py-24 bg-sky overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="reveal text-center max-w-2xl mx-auto mb-14">
+        <p class="eyebrow text-tealdk text-xs font-semibold uppercase mb-4">Bukti Kemampuan</p>
+        <h2 class="font-display text-4xl sm:text-5xl text-ink tracking-tightish leading-[1.08]">Bukan Sekadar Teori — Kami Sudah Membangunnya.</h2>
+        <p class="mt-5 text-ink/55 text-lg">Setiap solusi yang kami tawarkan — baik perangkat maupun aplikasi — berakar pada kemampuan teknis yang nyata dan teruji langsung.</p>
+      </div>
+
+      <div class="reveal rounded-[1.8rem] bg-white border border-line shadow-card overflow-hidden grid lg:grid-cols-2">
+        <!-- Foto -->
+        <div class="relative min-h-[280px] lg:min-h-full overflow-hidden">
+          <img src="assets/img/porto-iot.jpg" alt="Prototipe sistem elektronik dan sensor IoT" class="img-cover card-img" width="900" height="600" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent lg:bg-gradient-to-r"></div>
+          <span class="absolute top-5 left-5 tag uppercase text-white bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-3 py-1.5">Proyek Riset</span>
+        </div>
+        <!-- Narasi -->
+        <div class="p-8 sm:p-10 flex flex-col justify-center">
+          <h3 class="font-display text-2xl sm:text-3xl text-ink leading-snug">Sistem Monitoring Detak Jantung Real-Time</h3>
+          <p class="mt-4 text-ink/65 leading-relaxed">
+            Sebagai proyek riset (tugas akhir), kami membangun sistem pemantauan detak jantung berbasis sensor yang membaca data tubuh secara <em>real-time</em>, memprosesnya pada mikrokontroler, dan menyajikannya dalam tampilan yang mudah dibaca.
+          </p>
+          <p class="mt-4 text-ink/60 leading-relaxed text-[15px]">
+            Mengapa ini relevan bagi instansi Anda? Karena rangkaian kemampuannya <span class="text-ink font-medium">identik</span> dengan yang dibutuhkan solusi Anda — membaca sensor, memproses data, lalu menyajikannya. Dari memantau jantung hingga memantau suhu data center atau mencatat kehadiran murid, fondasinya sama.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="text-xs font-medium text-tealdk bg-tealdk/10 border border-tealdk/20 rounded-full px-3 py-1.5">Sensor Real-Time</span>
+            <span class="text-xs font-medium text-tealdk bg-tealdk/10 border border-tealdk/20 rounded-full px-3 py-1.5">Mikrokontroler</span>
+            <span class="text-xs font-medium text-tealdk bg-tealdk/10 border border-tealdk/20 rounded-full px-3 py-1.5">Pemrosesan Data</span>
+            <span class="text-xs font-medium text-tealdk bg-tealdk/10 border border-tealdk/20 rounded-full px-3 py-1.5">Visualisasi</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dua build tambahan -->
+      <div class="grid md:grid-cols-2 gap-6 mt-6">
+
+        <!-- Access Control -->
+        <article class="reveal card-lift group rounded-3xl bg-white border border-line overflow-hidden flex flex-col">
+          <div class="relative h-52 overflow-hidden">
+            <img src="assets/img/porto-access.jpg" alt="Kunci pintu pintar dengan kendali aplikasi" class="img-cover card-img" width="800" height="450" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent"></div>
+            <span class="absolute top-4 left-4 tag uppercase text-white bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-3 py-1.5">Sudah Dibangun</span>
+          </div>
+          <div class="p-7 flex flex-col flex-1">
+            <h3 class="font-display text-xl text-ink leading-snug">Access Control Pintu — RFID &amp; PIN</h3>
+            <p class="mt-3 text-ink/60 leading-relaxed text-[15px] flex-1">Sistem kontrol akses pintu dengan kartu RFID atau kode PIN yang membuka kunci elektrik, mencatat siapa &amp; kapan masuk, dan dapat dipantau dari jarak jauh. Cocok untuk ruang server, lab, gudang, atau pintu kantor.</p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="text-xs font-medium text-tealdk bg-tealdk/10 border border-tealdk/20 rounded-full px-3 py-1.5">RFID / PIN</span>
+              <span class="text-xs font-medium text-tealdk bg-tealdk/10 border border-tealdk/20 rounded-full px-3 py-1.5">Kunci Elektrik</span>
+              <span class="text-xs font-medium text-tealdk bg-tealdk/10 border border-tealdk/20 rounded-full px-3 py-1.5">Log Akses</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Otomatisasi Kelistrikan -->
+        <article class="reveal card-lift group rounded-3xl bg-white border border-line overflow-hidden flex flex-col" style="transition-delay:.06s">
+          <div class="relative h-52 overflow-hidden">
+            <img src="assets/img/porto-electrical.jpg" alt="Panel kendali pintar untuk kelistrikan ruangan" class="img-cover card-img" width="800" height="450" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent"></div>
+            <span class="absolute top-4 left-4 tag uppercase text-white bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-3 py-1.5">Sudah Dibangun</span>
+          </div>
+          <div class="p-7 flex flex-col flex-1">
+            <h3 class="font-display text-xl text-ink leading-snug">Otomatisasi Kelistrikan Kantor</h3>
+            <p class="mt-3 text-ink/60 leading-relaxed text-[15px] flex-1">Kendali otomatis untuk lampu, AC, dan perangkat listrik kantor — berdasarkan jadwal, sensor kehadiran, atau dari ponsel. Mematikan beban yang terlupa menyala dan menekan tagihan listrik tanpa repot.</p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="text-xs font-medium text-tealdk bg-tealdk/10 border border-tealdk/20 rounded-full px-3 py-1.5">Lampu &amp; AC</span>
+              <span class="text-xs font-medium text-tealdk bg-tealdk/10 border border-tealdk/20 rounded-full px-3 py-1.5">Jadwal &amp; Sensor</span>
+              <span class="text-xs font-medium text-tealdk bg-tealdk/10 border border-tealdk/20 rounded-full px-3 py-1.5">Hemat Energi</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="reveal mt-8 text-center text-ink/45 text-sm italic">Sebagai mitra yang baru tumbuh, kami terus memperluas portofolio — dan instansi Anda bisa menjadi salah satu kisah sukses berikutnya.</p>
+    </div>
+  </section>
+
+  <!-- ===================== ARSITEKTUR SELF-HOSTED ===================== -->
+  <section class="relative py-24 bg-ink overflow-hidden">
+    <div class="absolute inset-0 grid-soft opacity-50" style="-webkit-mask-image:radial-gradient(ellipse 90% 90% at 50% 40%, #000 30%, transparent 100%);mask-image:radial-gradient(ellipse 90% 90% at 50% 40%, #000 30%, transparent 100%)"></div>
+    <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[30rem] h-[30rem] glow opacity-30"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-10">
+      <div class="reveal text-center max-w-2xl mx-auto mb-16">
+        <p class="eyebrow text-teal text-xs font-semibold uppercase mb-4">Cara Sistem Bekerja</p>
+        <h2 class="font-display text-4xl sm:text-5xl text-white tracking-tightish leading-[1.08]">Semua Berjalan di <span class="italic text-teal">Server Anda Sendiri.</span></h2>
+        <p class="mt-5 text-lg" style="color:#cfe2e9">Tidak ada data yang singgah ke server vendor luar. Dari perangkat hingga dasbor, alurnya tertutup dalam infrastruktur Anda.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5 items-stretch relative">
+        <!-- konektor -->
+        <div class="hidden md:block absolute top-1/2 left-[33%] right-[33%] h-px bg-gradient-to-r from-teal/0 via-teal/50 to-teal/0 -translate-y-1/2"></div>
+
+        <!-- Step 1 -->
+        <div class="reveal rounded-3xl bg-white/[0.05] border border-white/10 p-7 text-center">
+          <span class="inline-grid place-items-center w-14 h-14 rounded-2xl bg-teal/15 text-teal mb-5">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/><path d="M5 12a7 7 0 0114 0M2.5 12a9.5 9.5 0 0119 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </span>
+          <h3 class="font-display text-xl text-white">1. Perangkat IoT</h3>
+          <p class="mt-2 text-sm leading-relaxed" style="color:#b9d2da">Sensor, RFID gate, GPS tracker, &amp; smart lock mengumpulkan data di lapangan secara real-time.</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="reveal rounded-3xl bg-teal/10 border border-teal/30 p-7 text-center relative" style="transition-delay:.1s">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 tag uppercase bg-teal text-ink rounded-full px-3 py-1 font-bold">Milik Anda</span>
+          <span class="inline-grid place-items-center w-14 h-14 rounded-2xl bg-teal text-white mb-5 mt-2">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="3" y="14" width="18" height="6" rx="1.5" stroke="currentColor" stroke-width="1.7"/><path d="M7 7h.01M7 17h.01" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          </span>
+          <h3 class="font-display text-xl text-white">2. Server Lokal (Private Cloud)</h3>
+          <p class="mt-2 text-sm leading-relaxed" style="color:#cfe2e9">Semua data diproses &amp; disimpan di server instansi Anda — Proxmox/Docker, terenkripsi, tanpa pihak ketiga.</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="reveal rounded-3xl bg-white/[0.05] border border-white/10 p-7 text-center" style="transition-delay:.2s">
+          <span class="inline-grid place-items-center w-14 h-14 rounded-2xl bg-teal/15 text-teal mb-5">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M7 12l3-3 2.5 2.5L17 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="font-display text-xl text-white">3. Dasbor &amp; Notifikasi</h3>
+          <p class="mt-2 text-sm leading-relaxed" style="color:#b9d2da">Pimpinan &amp; staf memantau lewat dasbor dan menerima peringatan WhatsApp/Telegram dari ponsel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOLUSI UNGGULAN (TERPADU) ===================== -->
+  <section id="solusi" class="relative py-24 bg-sky overflow-hidden">
+    <div class="absolute -top-20 -left-24 w-[28rem] h-[28rem] glow opacity-40"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+        <div class="max-w-2xl">
+          <p class="eyebrow text-tealdk text-xs font-semibold uppercase mb-4">Solusi Unggulan</p>
+          <h2 class="font-display text-4xl sm:text-5xl text-ink tracking-tightish leading-[1.08]">
+            Satu Lini Produk Cerdas, untuk <span class="italic text-tealdk">Setiap Jenis Instansi.</span>
+          </h2>
+        </div>
+        <p class="text-ink/55 text-base max-w-sm md:text-right">Dari sekolah, kantor, pabrik, hingga lahan pertanian — inilah solusi yang paling sering kami bangun dan paling berdampak bagi klien kami.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Hero 1: AI CCTV -->
+        <article class="reveal card-lift group rounded-3xl bg-white border border-line overflow-hidden flex flex-col">
+          <div class="relative h-48 overflow-hidden">
+            <img src="assets/img/sol-cctv.jpg" alt="Dinding kamera CCTV pengawas" class="img-cover card-img" width="800" height="450" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/15 to-transparent"></div>
+            <span class="absolute top-4 left-4 tag uppercase text-white bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-2.5 py-1">Keamanan AI</span>
+          </div>
+          <div class="p-7 flex flex-col flex-1">
+            <h3 class="font-display text-xl text-ink leading-snug">AI CCTV – Optimasi Kamera Existing</h3>
+            <p class="mt-2.5 text-sm text-ink/55 leading-relaxed">Kami tidak menjual kamera baru. Kami mengoptimalkan CCTV yang sudah Anda miliki: deteksi orang/objek mencurigakan, kirim foto ke Telegram saat anomali. Proses di server lokal Anda.</p>
+            <div class="my-5 h-px bg-line"></div>
+            <div class="space-y-2.5 text-[13px] mt-auto">
+              <p class="flex gap-2.5"><span class="shrink-0 text-rose-400 font-bold">—</span><span class="text-ink/65"><strong class="text-ink">Masalah:</strong> rekaman CCTV baru berguna setelah kejadian, butuh operator memantau terus.</span></p>
+              <p class="flex gap-2.5"><span class="shrink-0 text-tealdk font-bold">+</span><span class="text-ink/65"><strong class="text-ink">Solusi:</strong> deteksi otomatis + notifikasi Telegram dari server lokal Anda.</span></p>
+              <p class="flex gap-2.5"><span class="shrink-0 text-tealdk">✓</span><span class="text-ink/65"><strong class="text-ink">Dampak:</strong> pengawasan proaktif 24 jam tanpa menambah personel atau mengganti kamera.</span></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hero 2: Fleet & BBM -->
+        <article class="reveal card-lift group rounded-3xl bg-white border border-line overflow-hidden flex flex-col" style="transition-delay:.06s">
+          <div class="relative h-48 overflow-hidden">
+            <img src="assets/img/gov-fleet.jpg" alt="Analitik armada dan jaringan data" class="img-cover card-img" width="800" height="450" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/15 to-transparent"></div>
+            <span class="absolute top-4 left-4 tag uppercase text-white bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-2.5 py-1">Fleet &amp; BBM</span>
+          </div>
+          <div class="p-7 flex flex-col flex-1">
+            <h3 class="font-display text-xl text-ink leading-snug">Self-Hosted Fleet Tracking &amp; Analitik BBM</h3>
+            <p class="mt-2.5 text-sm text-ink/55 leading-relaxed">Lacak seluruh armada di server Anda sendiri, lengkap dengan dasbor rute dan konsumsi bahan bakar.</p>
+            <div class="my-5 h-px bg-line"></div>
+            <div class="space-y-2.5 text-[13px] mt-auto">
+              <p class="flex gap-2.5"><span class="shrink-0 text-rose-400 font-bold">—</span><span class="text-ink/65"><strong class="text-ink">Masalah:</strong> kebocoran anggaran BBM &amp; penyalahgunaan rute sulit dibuktikan.</span></p>
+              <p class="flex gap-2.5"><span class="shrink-0 text-tealdk font-bold">+</span><span class="text-ink/65"><strong class="text-ink">Solusi:</strong> posisi &amp; konsumsi BBM real-time, tanpa langganan aplikasi pihak ketiga.</span></p>
+              <p class="flex gap-2.5"><span class="shrink-0 text-tealdk">✓</span><span class="text-ink/65"><strong class="text-ink">Dampak:</strong> penghematan terukur, akuntabilitas operasional meningkat.</span></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hero 3: Smart Industri -->
+        <article class="reveal card-lift group rounded-3xl bg-white border border-line overflow-hidden flex flex-col" style="transition-delay:.12s">
+          <div class="relative h-48 overflow-hidden">
+            <img src="assets/img/sol-industri.jpg" alt="Teknisi memantau perangkat industri" class="img-cover card-img" width="800" height="450" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/15 to-transparent"></div>
+            <span class="absolute top-4 left-4 tag uppercase text-white bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-2.5 py-1">Industri 4.0</span>
+          </div>
+          <div class="p-7 flex flex-col flex-1">
+            <h3 class="font-display text-xl text-ink leading-snug">Smart Industri &amp; Predictive Maintenance</h3>
+            <p class="mt-2.5 text-sm text-ink/55 leading-relaxed">Pantau status mesin, downtime, dan efisiensi produksi (OEE) real-time — deteksi anomali sebelum kerusakan terjadi.</p>
+            <div class="my-5 h-px bg-line"></div>
+            <div class="space-y-2.5 text-[13px] mt-auto">
+              <p class="flex gap-2.5"><span class="shrink-0 text-rose-400 font-bold">—</span><span class="text-ink/65"><strong class="text-ink">Masalah:</strong> mesin berhenti mendadak menghentikan produksi &amp; menelan biaya besar.</span></p>
+              <p class="flex gap-2.5"><span class="shrink-0 text-tealdk font-bold">+</span><span class="text-ink/65"><strong class="text-ink">Solusi:</strong> sensor getaran &amp; arus memberi peringatan dini sebelum kerusakan.</span></p>
+              <p class="flex gap-2.5"><span class="shrink-0 text-tealdk">✓</span><span class="text-ink/65"><strong class="text-ink">Dampak:</strong> downtime menurun, umur mesin lebih panjang, produksi stabil.</span></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hero 4: Smart Energy & Solar -->
+        <article class="reveal card-lift group rounded-3xl bg-white border border-line overflow-hidden flex flex-col">
+          <div class="relative h-48 overflow-hidden">
+            <img src="assets/img/sol-energy.jpg" alt="Hamparan panel surya dari udara" class="img-cover card-img" width="800" height="450" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/15 to-transparent"></div>
+            <span class="absolute top-4 left-4 tag uppercase text-white bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-2.5 py-1">Energi &amp; Solar</span>
+          </div>
+          <div class="p-7 flex flex-col flex-1">
+            <h3 class="font-display text-xl text-ink leading-snug">Smart Energy &amp; Solar Monitoring</h3>
+            <p class="mt-2.5 text-sm text-ink/55 leading-relaxed">Pantau konsumsi listrik per area dan kinerja panel surya dalam satu dasbor, lalu otomatiskan pencahayaan &amp; pendingin.</p>
+            <div class="my-5 h-px bg-line"></div>
+            <div class="space-y-2.5 text-[13px] mt-auto">
+              <p class="flex gap-2.5"><span class="shrink-0 text-rose-400 font-bold">—</span><span class="text-ink/65"><strong class="text-ink">Masalah:</strong> tagihan listrik membengkak tanpa tahu sumber pemborosannya.</span></p>
+              <p class="flex gap-2.5"><span class="shrink-0 text-tealdk font-bold">+</span><span class="text-ink/65"><strong class="text-ink">Solusi:</strong> monitoring daya per panel + otomasi beban sesuai kebutuhan nyata.</span></p>
+              <p class="flex gap-2.5"><span class="shrink-0 text-tealdk">✓</span><span class="text-ink/65"><strong class="text-ink">Dampak:</strong> biaya energi turun, operasional lebih hijau &amp; efisien.</span></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hero 5: Smart Agriculture -->
+        <article class="reveal card-lift group rounded-3xl bg-white border border-line overflow-hidden flex flex-col" style="transition-delay:.06s">
+          <div class="relative h-48 overflow-hidden">
+            <img src="assets/img/sol-agri.jpg" alt="Lahan tanaman hijau yang dipantau sensor" class="img-cover card-img" width="800" height="450" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/15 to-transparent"></div>
+            <span class="absolute top-4 left-4 tag uppercase text-white bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-2.5 py-1">Pertanian Cerdas</span>
+          </div>
+          <div class="p-7 flex flex-col flex-1">
+            <h3 class="font-display text-xl text-ink leading-snug">Smart Agriculture — Field Monitoring</h3>
+            <p class="mt-2.5 text-sm text-ink/55 leading-relaxed">Sensor lahan memantau kelembapan tanah, suhu, dan cuaca; penyiraman dapat berjalan otomatis berdasarkan data.</p>
+            <div class="my-5 h-px bg-line"></div>
+            <div class="space-y-2.5 text-[13px] mt-auto">
+              <p class="flex gap-2.5"><span class="shrink-0 text-rose-400 font-bold">—</span><span class="text-ink/65"><strong class="text-ink">Masalah:</strong> penyiraman &amp; pemupukan manual boros air dan rawan salah takar.</span></p>
+              <p class="flex gap-2.5"><span class="shrink-0 text-tealdk font-bold">+</span><span class="text-ink/65"><strong class="text-ink">Solusi:</strong> keputusan berbasis data real-time dari lahan, terkendali dari ponsel.</span></p>
+              <p class="flex gap-2.5"><span class="shrink-0 text-tealdk">✓</span><span class="text-ink/65"><strong class="text-ink">Dampak:</strong> hemat air &amp; pupuk, hasil panen lebih konsisten.</span></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hero 6: RFID Gate & Absensi -->
+        <article class="reveal card-lift group rounded-3xl bg-white border border-line overflow-hidden flex flex-col" style="transition-delay:.12s">
+          <div class="relative h-48 overflow-hidden">
+            <img src="assets/img/edu-rfid.jpg" alt="Gerbang akses gedung modern" class="img-cover card-img" width="800" height="450" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/15 to-transparent"></div>
+            <span class="absolute top-4 left-4 tag uppercase text-white bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-2.5 py-1">Akses &amp; Absensi</span>
+          </div>
+          <div class="p-7 flex flex-col flex-1">
+            <h3 class="font-display text-xl text-ink leading-snug">Smart RFID Gate &amp; Absensi Otomatis</h3>
+            <p class="mt-2.5 text-sm text-ink/55 leading-relaxed">Tap kartu di gerbang memicu pencatatan kehadiran otomatis dan notifikasi WhatsApp/Telegram secara real-time.</p>
+            <div class="my-5 h-px bg-line"></div>
+            <div class="space-y-2.5 text-[13px] mt-auto">
+              <p class="flex gap-2.5"><span class="shrink-0 text-rose-400 font-bold">—</span><span class="text-ink/65"><strong class="text-ink">Masalah:</strong> rekap kehadiran manual menyita waktu staf setiap hari.</span></p>
+              <p class="flex gap-2.5"><span class="shrink-0 text-tealdk font-bold">+</span><span class="text-ink/65"><strong class="text-ink">Solusi:</strong> kehadiran tercatat otomatis dan terpusat di server Anda.</span></p>
+              <p class="flex gap-2.5"><span class="shrink-0 text-tealdk">✓</span><span class="text-ink/65"><strong class="text-ink">Dampak:</strong> data akurat, beban administrasi turun drastis.</span></p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Pointer ke katalog -->
+      <div class="reveal mt-12 text-center">
+        <p class="text-ink/55 text-base">Ini baru sebagian. Kami punya <span class="text-ink font-semibold">banyak solusi lain</span> — mulai dari perangkat otomasi &amp; sensor hingga aplikasi yang meringankan pekerjaan staf.</p>
+        <a href="katalog.html" class="mt-5 inline-flex items-center gap-2.5 rounded-full bg-ink text-white font-semibold px-7 py-4 hover:bg-deep transition-colors shadow-lg shadow-ink/15">
+          Jelajahi Katalog Lengkap
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENGAPA MAHENORA ===================== -->
+  <section id="mengapa" class="relative py-24 bg-ink overflow-hidden">
+    <div class="absolute inset-0 grid-soft opacity-50" style="-webkit-mask-image:radial-gradient(ellipse 90% 90% at 50% 50%, #000 30%, transparent 100%);mask-image:radial-gradient(ellipse 90% 90% at 50% 50%, #000 30%, transparent 100%)"></div>
+    <div class="absolute -top-20 right-10 w-96 h-96 glow opacity-40"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="reveal text-center max-w-3xl mx-auto mb-16">
+        <p class="eyebrow text-teal text-xs font-semibold uppercase mb-4">Mengapa MAHENORA</p>
+        <h2 class="font-display text-4xl sm:text-5xl text-white tracking-tightish leading-[1.08]">
+          Investasi yang Anda <span class="italic text-teal">Miliki</span> — Bukan yang Anda Sewa.
+        </h2>
+        <p class="mt-5 text-lg" style="color:#cfe2e9">Banyak instansi terjebak biaya langganan yang membengkak tiap tahun. Kami menawarkan filosofi berbeda.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="reveal rounded-3xl bg-white/[0.05] border border-white/10 p-8 hover:bg-white/[0.08] transition-colors">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl bg-teal text-white mb-6">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l8 4v5c0 4.5-3 7.5-8 9-5-1.5-8-4.5-8-9V7l8-4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="font-display text-xl text-white">Self-Hosted, Bebas Langganan</h3>
+          <p class="mt-2.5 text-sm leading-relaxed" style="color:#b9d2da">Sistem berjalan di server milik Anda. Tanpa biaya bulanan mengikat, tanpa <em>vendor lock-in</em>, data tak pernah meninggalkan gedung Anda.</p>
+        </div>
+        <div class="reveal rounded-3xl bg-white/[0.05] border border-white/10 p-8 hover:bg-white/[0.08] transition-colors" style="transition-delay:.08s">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl bg-teal text-white mb-6">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </span>
+          <h3 class="font-display text-xl text-white">SLA Lokal — Respon 4 Jam</h3>
+          <p class="mt-2.5 text-sm leading-relaxed" style="color:#b9d2da">Tim kami berada di wilayah yang sama dengan Anda. Kami berkomitmen merespons setiap kendala kritis dalam waktu maksimal 4 jam kerja.</p>
+        </div>
+        <div class="reveal rounded-3xl bg-white/[0.05] border border-white/10 p-8 hover:bg-white/[0.08] transition-colors" style="transition-delay:.16s">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl bg-teal text-white mb-6">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12a8 8 0 018-8v8H4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 4a8 8 0 11-8 8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </span>
+          <h3 class="font-display text-xl text-white">Tanpa Risiko Finansial Awal</h3>
+          <p class="mt-2.5 text-sm leading-relaxed" style="color:#b9d2da">Buktikan dulu, baru putuskan. Audit Jaringan Gratis + uji coba 14 hari sebelum Anda mengeluarkan satu rupiah pun.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROSES 3 TAHAP ===================== -->
+  <section id="proses" class="relative py-24 bg-sky overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="reveal max-w-2xl mb-16">
+        <p class="eyebrow text-tealdk text-xs font-semibold uppercase mb-4">Cara Kerja Kami</p>
+        <h2 class="font-display text-4xl sm:text-5xl text-ink tracking-tightish leading-[1.08]">Tiga Tahap, Tanpa Risiko di Awal.</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 relative">
+        <div class="hidden md:block absolute top-7 left-[16%] right-[16%] h-px bg-gradient-to-r from-teal/0 via-teal/50 to-teal/0"></div>
+
+        <div class="reveal relative">
+          <span class="grid place-items-center w-14 h-14 rounded-2xl bg-white border border-line text-tealdk font-display text-2xl shadow-sm mb-5">01</span>
+          <h3 class="font-display text-2xl text-ink">Asesmen Jaringan Gratis</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Tim kami memetakan kondisi infrastruktur, kebutuhan staf, dan titik inefisiensi instansi Anda — sepenuhnya tanpa biaya.</p>
+        </div>
+        <div class="reveal relative" style="transition-delay:.1s">
+          <span class="grid place-items-center w-14 h-14 rounded-2xl bg-white border border-line text-tealdk font-display text-2xl shadow-sm mb-5">02</span>
+          <h3 class="font-display text-2xl text-ink">Pilot Project 14 Hari</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Implementasi terbatas sebagai <em>Proof of Concept</em>. Anda menyaksikan langsung dampaknya — tanpa komitmen finansial.</p>
+        </div>
+        <div class="reveal relative" style="transition-delay:.2s">
+          <span class="grid place-items-center w-14 h-14 rounded-2xl bg-teal text-white font-display text-2xl shadow-lg shadow-teal/30 mb-5">03</span>
+          <h3 class="font-display text-2xl text-ink">Implementasi Penuh &amp; Pelatihan</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Penerapan skala penuh disertai pelatihan menyeluruh, memastikan staf Anda mahir mengoperasikan sistem secara mandiri.</p>
+        </div>
+      </div>
+
+      <div class="reveal mt-12">
+        <a href="#kontak" class="inline-flex items-center gap-2.5 rounded-full bg-ink text-white font-semibold px-7 py-4 hover:bg-deep transition-colors">
+          Mulai dari Tahap 1 — Gratis
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== KATALOG INFRASTRUKTUR ===================== -->
+  <section id="infrastruktur" class="relative py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+        <div class="max-w-2xl">
+          <p class="eyebrow text-tealdk text-xs font-semibold uppercase mb-4">Fondasi Infrastruktur</p>
+          <h2 class="font-display text-4xl sm:text-5xl text-ink tracking-tightish leading-[1.08]">Fondasi Teknis di Balik Setiap Solusi.</h2>
+        </div>
+        <p class="text-ink/55 text-base max-w-sm">Layanan pendukung yang memastikan ekosistem cerdas Anda berjalan cepat, stabil, dan hemat energi.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-px rounded-3xl overflow-hidden border border-line bg-line">
+        <a href="#kontak" class="group relative bg-paper hover:bg-sky transition-colors p-9 flex flex-col">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl bg-ink text-teal mb-6 group-hover:bg-teal group-hover:text-white transition-colors"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12h4l2-6 4 12 2-6h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h3 class="font-display text-xl text-ink leading-snug">Optimalisasi Bandwidth &amp; Gateway</h3>
+          <p class="mt-2 text-sm text-ink/55 leading-relaxed">Konfigurasi MikroTik untuk pengelolaan internet yang adil, stabil, dan terkendali di seluruh instansi.</p>
+          <span class="mt-6 text-tealdk text-sm font-semibold inline-flex items-center gap-1.5 group-hover:gap-2.5 transition-all">Pelajari <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+        <a href="#kontak" class="group relative bg-paper hover:bg-sky transition-colors p-9 flex flex-col">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl bg-ink text-teal mb-6 group-hover:bg-teal group-hover:text-white transition-colors"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="18" height="6" rx="1.5" stroke="currentColor" stroke-width="1.8"/><path d="M7 7h.01M7 17h.01" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+          <h3 class="font-display text-xl text-ink leading-snug">Virtualisasi Server Lokal</h3>
+          <p class="mt-2 text-sm text-ink/55 leading-relaxed">Proxmox &amp; Docker untuk memaksimalkan satu server fisik menjadi banyak layanan yang efisien.</p>
+          <span class="mt-6 text-tealdk text-sm font-semibold inline-flex items-center gap-1.5 group-hover:gap-2.5 transition-all">Pelajari <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+        <a href="#kontak" class="group relative bg-paper hover:bg-sky transition-colors p-9 flex flex-col">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl bg-ink text-teal mb-6 group-hover:bg-teal group-hover:text-white transition-colors"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+          <h3 class="font-display text-xl text-ink leading-snug">Solusi Hemat Energi Gedung</h3>
+          <p class="mt-2 text-sm text-ink/55 leading-relaxed"><em>Smart Building System</em> yang mengatur penerangan &amp; pendingin otomatis demi menekan tagihan listrik.</p>
+          <span class="mt-6 text-tealdk text-sm font-semibold inline-flex items-center gap-1.5 group-hover:gap-2.5 transition-all">Pelajari <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+      </div>
+
+      <!-- CTA ke katalog lengkap -->
+      <div class="reveal mt-10 rounded-3xl bg-ink p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6 overflow-hidden relative">
+        <div class="absolute inset-0 grid-soft opacity-40" style="-webkit-mask-image:none;mask-image:none"></div>
+        <div class="relative z-10">
+          <h3 class="font-display text-2xl sm:text-3xl text-white leading-snug">Masih banyak solusi IoT lain yang bisa kami bangun.</h3>
+          <p class="mt-2 text-sm" style="color:#b9d2da">Jelajahi katalog lengkap — disaring per fungsi dan per jenis instansi.</p>
+        </div>
+        <a href="katalog.html" class="relative z-10 shrink-0 inline-flex items-center gap-2.5 rounded-full bg-teal text-white font-bold px-7 py-4 hover:bg-white hover:text-ink transition-colors shadow-xl shadow-teal/20">
+          Lihat Semua Solusi
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="relative py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-6 lg:px-10">
+      <div class="reveal text-center mb-14">
+        <p class="eyebrow text-tealdk text-xs font-semibold uppercase mb-4">Pertanyaan Umum</p>
+        <h2 class="font-display text-4xl sm:text-5xl text-ink tracking-tightish leading-[1.08]">Hal yang Sering Ditanyakan.</h2>
+      </div>
+
+      <div class="space-y-3">
+        <details class="reveal group rounded-2xl bg-paper border border-line p-5 sm:p-6 [&_svg]:open:rotate-45">
+          <summary class="flex items-center justify-between cursor-pointer list-none font-display text-lg text-ink">
+            Apakah kami benar-benar tidak membayar langganan bulanan?
+            <svg class="shrink-0 text-tealdk transition-transform" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </summary>
+          <p class="mt-3 text-sm text-ink/60 leading-relaxed">Benar. Anda membayar sekali untuk perangkat &amp; implementasi. Sistem berjalan di server milik Anda, sehingga tidak ada biaya langganan vendor yang mengikat. Biaya lanjutan hanya opsional, seperti perawatan atau pengembangan fitur baru bila Anda inginkan.</p>
+        </details>
+
+        <details class="reveal group rounded-2xl bg-paper border border-line p-5 sm:p-6 [&_svg]:open:rotate-45" style="transition-delay:.05s">
+          <summary class="flex items-center justify-between cursor-pointer list-none font-display text-lg text-ink">
+            Bagaimana keamanan data kami terjamin?
+            <svg class="shrink-0 text-tealdk transition-transform" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </summary>
+          <p class="mt-3 text-sm text-ink/60 leading-relaxed">Seluruh data tersimpan dan diproses di server lokal instansi Anda, dengan kredensial terenkripsi. Karena data tidak pernah dikirim ke pihak ketiga, kendali penuh tetap ada di tangan Anda.</p>
+        </details>
+
+        <details class="reveal group rounded-2xl bg-paper border border-line p-5 sm:p-6 [&_svg]:open:rotate-45" style="transition-delay:.1s">
+          <summary class="flex items-center justify-between cursor-pointer list-none font-display text-lg text-ink">
+            Apa yang terjadi setelah Pilot Project 14 hari?
+            <svg class="shrink-0 text-tealdk transition-transform" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </summary>
+          <p class="mt-3 text-sm text-ink/60 leading-relaxed">Anda bebas memutuskan tanpa kewajiban apa pun. Jika cocok, kami lanjut ke implementasi skala penuh beserta pelatihan staf. Jika belum, tidak ada biaya yang timbul dari masa uji coba.</p>
+        </details>
+
+        <details class="reveal group rounded-2xl bg-paper border border-line p-5 sm:p-6 [&_svg]:open:rotate-45" style="transition-delay:.15s">
+          <summary class="flex items-center justify-between cursor-pointer list-none font-display text-lg text-ink">
+            Apakah perlu mengganti perangkat yang sudah ada?
+            <svg class="shrink-0 text-tealdk transition-transform" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </summary>
+          <p class="mt-3 text-sm text-ink/60 leading-relaxed">Tidak selalu. Pada tahap Asesmen Jaringan Gratis, kami memetakan infrastruktur Anda dan mengutamakan pemanfaatan perangkat eksisting. Penambahan hanya dilakukan bila benar-benar diperlukan.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER CTA ===================== -->
+  <section id="kontak" class="relative py-24 bg-sky">
+    <div class="max-w-5xl mx-auto px-6 lg:px-10">
+      <div class="reveal relative rounded-[2.2rem] bg-gradient-to-br from-deep via-navy to-ink p-10 sm:p-16 text-center overflow-hidden shadow-soft">
+        <div class="absolute inset-0 grid-soft opacity-40" style="-webkit-mask-image:none;mask-image:none"></div>
+        <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[26rem] h-[26rem] glow opacity-60"></div>
+        <div class="relative z-10">
+          <p class="eyebrow text-teal text-xs font-semibold uppercase mb-5">Mari Mulai Diskusi</p>
+          <h2 class="font-display text-3xl sm:text-5xl text-white tracking-tightish leading-[1.1] max-w-2xl mx-auto">
+            Diskusikan Kebutuhan Instansi Anda Bersama Tim Solusi Bisnis Kami.
+          </h2>
+          <p class="mt-5 text-lg max-w-xl mx-auto" style="color:#cfe2e9">Tanpa biaya, tanpa tekanan. Mulai dari Asesmen Jaringan Gratis dan rasakan bedanya dalam 14 hari.</p>
+          <div class="mt-9 flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://wa.me/6280000000000?text=Halo%20MAHENORA%2C%20saya%20tertarik%20dengan%20Pilot%20Project%20gratis%2014%20hari." class="inline-flex items-center justify-center gap-2.5 rounded-full bg-teal text-white font-bold px-8 py-4 hover:bg-white hover:text-ink transition-colors shadow-xl shadow-teal/20">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.18c-.24.68-1.42 1.31-1.95 1.36-.5.05-.5.41-3.16-.66-2.66-1.07-4.34-3.78-4.47-3.96-.13-.17-1.07-1.42-1.07-2.71s.68-1.93.92-2.19c.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.39-.06.6.46.24.58.81 1.99.88 2.13.07.14.12.31.02.49-.09.18-.14.3-.27.46-.13.16-.28.36-.4.48-.13.13-.27.28-.12.54.15.27.66 1.09 1.42 1.77.98.87 1.8 1.14 2.07 1.27.27.13.42.11.58-.07.16-.18.66-.77.84-1.04.18-.27.35-.22.6-.13.24.09 1.55.73 1.81.86.27.13.45.2.51.31.07.11.07.63-.17 1.31z"/></svg>
+              Hubungi Tim Solusi Bisnis MAHENORA
+            </a>
+            <a href="#hero" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 text-white font-semibold px-8 py-4 hover:border-teal hover:text-teal transition-colors">
+              Ajukan Demo 14 Hari
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-ink border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-16">
+      <div class="grid md:grid-cols-12 gap-10">
+        <div class="md:col-span-5">
+          <a href="#hero" class="flex items-center gap-2.5 mb-5">
+            <span class="grid place-items-center w-9 h-9 rounded-xl bg-teal text-white font-display font-semibold text-lg">M</span>
+            <span class="font-display text-xl text-white tracking-tightish">MAHENORA</span>
+          </a>
+          <p class="text-sm leading-relaxed max-w-sm" style="color:#9fbcc6">System Integrator &amp; Private Cloud Provider. Kami memadukan perangkat IoT dengan aplikasi pendukung efisiensi staf — sistem yang Anda miliki, bukan yang Anda sewa.</p>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-white text-sm font-semibold mb-4">Solusi</h4>
+          <ul class="space-y-2.5 text-sm" style="color:#9fbcc6">
+            <li><a href="#solusi" class="hover:text-teal transition-colors">Solusi Unggulan</a></li>
+            <li><a href="katalog.html" class="hover:text-teal transition-colors">Katalog Lengkap</a></li>
+            <li><a href="#infrastruktur" class="hover:text-teal transition-colors">Infrastruktur</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-white text-sm font-semibold mb-4">Perusahaan</h4>
+          <ul class="space-y-2.5 text-sm" style="color:#9fbcc6">
+            <li><a href="#mengapa" class="hover:text-teal transition-colors">Mengapa Kami</a></li>
+            <li><a href="#proses" class="hover:text-teal transition-colors">Cara Kerja</a></li>
+            <li><a href="#kontak" class="hover:text-teal transition-colors">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-3">
+          <h4 class="text-white text-sm font-semibold mb-4">Konsultasi Strategis</h4>
+          <a href="https://wa.me/6280000000000?text=Halo%20MAHENORA%2C%20saya%20ingin%20berkonsultasi." class="inline-flex items-center gap-2 text-teal text-sm font-semibold hover:text-white transition-colors">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2z"/></svg>
+            Hubungi via WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="mt-14 pt-7 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs" style="color:#7da0ab">
+        <p>© 2025 MAHENORA. Seluruh hak cipta dilindungi.</p>
+        <p>Self-Hosted · No Vendor Lock-In · SLA Lokal 4 Jam</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
